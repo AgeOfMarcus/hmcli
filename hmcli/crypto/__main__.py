@@ -1,15 +1,11 @@
 from hackerman.crypto import xor, hmc, blowfish
 import argparse, getpass, sys
 
+from hmcli.utils import load_module
+
 modules = ["xor","hmc","blowfish"]
 
-def load_module(mod):
-	try:
-		exec("from hackerman.crypto import %s as module" % mod)
-		return locals()['module']
-	except Exception as e:
-		print("[!] Error loading hackerman.crypto.%s:" % mod,e)
-		exit(1)
+
 
 def parse_args():
 	p = argparse.ArgumentParser()
