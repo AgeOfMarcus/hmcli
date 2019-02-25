@@ -34,7 +34,7 @@ def parse_args():
 		p.error("-i/--interactive or -c/--command is required")
 	return args
 def main(args):
-	mod = load_module(args.module)
+	mod = load_module("hackerman.handlers",args.module)
 	password = getpass.getpass() if args.password is None else args.password
 	handler = mod.Handler(args.port, password)
 	if args.interactive:

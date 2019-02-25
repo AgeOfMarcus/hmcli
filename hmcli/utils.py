@@ -1,8 +1,8 @@
 import sys
 
-def load_module(mod):
+def load_module(base, mod):
 	try:
-		exec("from hackerman.crypto import %s as module" % mod)
+		exec("from %s import %s as module" % (base, mod))
 		return locals()['module']
 	except Exception as e:
 		print("[!] Error loading hackerman.crypto.%s:" % mod,e)

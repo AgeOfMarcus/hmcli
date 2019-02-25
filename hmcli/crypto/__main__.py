@@ -40,7 +40,7 @@ def parse_args():
 	return args
 def main(args):
 	password = args.password if not args.password is None else getpass.getpass()
-	crypto = load_module(args.module)
+	crypto = load_module("hackerman.crypto",args.module)
 	if args.text is None and args.file is None:
 		tg = input("(Input)> ").encode()
 	elif args.text:
