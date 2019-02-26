@@ -1,7 +1,7 @@
 import setuptools
 import os
 
-hm_ver = "0.10.16"
+hm_ver = "0.10.18"
 
 def read(fname):
 	return open(os.path.join(os.path.dirname(__file__), fname)).read()

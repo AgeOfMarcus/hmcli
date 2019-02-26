@@ -1,4 +1,3 @@
-from hackerman.handlers import reverse_tcp
 import argparse, getpass
 
 from hmcli.utils import load_module, print_raw

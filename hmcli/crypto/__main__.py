@@ -1,4 +1,3 @@
-from hackerman.crypto import xor, hmc, blowfish
 import argparse, getpass, sys
 
 from hmcli.utils import load_module
