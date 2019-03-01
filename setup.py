@@ -15,6 +15,7 @@ setuptools.setup(name='hmcli',
 	author_email='marcus@marcusweinberger.com',
 	license='GPL',
 	packages=setuptools.find_packages(),
+	keywords=['hackerman','cli'],
 	zip_safe=False,
 	install_requires=[
 		"hackerman>="+hm_ver,
